@@ -1,0 +1,410 @@
+body , html
+{
+	color:#333;
+	font-family: Lora,serif;
+    height: 100%;
+    width: 100%;
+    font-weight: 400;
+    font-style: italic;
+}
+body
+{
+	font-size: 14px;
+    line-height: 1.428571429;
+	background-color: #ffffff;
+	margin:0%;
+	display:block;
+}
+.container-fluid
+{
+	padding:0px !important;
+	margin:0% !important;
+}
+.carousel-inner
+{
+	height:100vh;
+}
+
+.menu-bar
+{
+	position: fixed;
+	padding:14px 15px;	
+	border-radius:50%;
+	background:rgba(0,0,0,0.4);
+	top:30px;
+	right:30px;
+}
+.menu-bar i 
+{
+	color:#fff;
+	font-size:21px;
+}
+.sidenav
+{
+	position:fixed;
+	top:0px;
+	right:0px;	
+	height:100vh;
+	background:rgba(0,0,0,0.9);
+	display:none;
+}
+@media only screen and(max-width:400px) 
+{
+	.menuitems
+	{
+	width:45%;
+	}
+}
+.menu-items
+{
+	list-style-type:none;
+	text-align:center;
+	padding:11px 16px 10px 16px;
+}
+.menu-items li:nth-child(0)
+{
+	padding:28px;
+	
+}
+.menu-items li i
+{
+	
+	font-size:34px;
+}
+.menu-items li
+{
+	padding:22px;
+	color:#999;
+	font-size:20px;
+	border-bottom:1px solid rgba(251,251,251,.1);
+	
+}
+.menu-items li:hover
+{
+	color:#fff;
+	cursor:pointer;
+}
+.couple-name
+{
+	position: absolute;
+    padding: 4rem;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+}
+.couple-name .name
+{
+	font-size:5em;
+	font-weight:900;
+	font-family: 'Tangerine', cursive;
+}
+.banner_timer
+{
+	display: inline-table;
+    margin: 57px 28px 60px;
+    padding: 0;
+	
+}
+.banner_timer ul
+{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.banner_timer ul li {
+    color: #fff;
+    background: rgba(244,68,130,.8);
+}	
+.banner_timer ul li, .banner_timer ul li span {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+	display:block;
+	font-size:65px;
+}
+
+
+.banner_timer ul li {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    display: inline-table;
+    font-size: 25px;
+    font-weight: 300;
+    height: 180px;
+    width: 180px;
+    line-height: 50px;
+    margin: 0 10px;
+    padding-top: 56px;
+    text-align: center;
+}
+
+@media (min-width: 300px)
+{
+	.banner_timer ul li span
+	{
+		font-size:24px;
+		
+	}
+	.couple-name
+	{
+		padding:0rem;
+		top:25%;
+		line-height:54px;
+	}
+	.couple-name .name
+	{
+		font-size:6rem;
+	}
+	.couple-name .name span
+	{
+		display:block;
+		font-size:.7em;
+	}
+		.invitation
+	{
+		font-size:30px;
+		line-height:1em;
+		font-family:'Tangerine', cursive;
+		font-weight:bold;
+	}
+	.banner_timer
+	{
+		margin:4%;
+	}
+	.banner_timer ul li 
+	{
+		 font-size: 19px !important;
+    font-weight: 300;
+    height: 70px !important;
+    width: 70px !important;
+    line-height: 24px !important;
+    margin: 0 10px !important;
+    padding-top: 15px !important;
+    text-align: center;	
+font-size:14px !important;	
+	}
+	
+}
+@media (min-width: 500px)
+{
+	.couple-name
+	{
+		top:24%;
+	}
+	
+}
+@media (min-width: 600px)
+{
+	.banner_timer ul li span
+	{
+		font-size:30px;
+		
+	}
+	.couple-name
+	{
+		padding:0rem;
+		top:26%;
+		line-height:60px;
+	}
+	.couple-name .name
+	{
+		font-size:7rem;
+	}
+	.banner_timer
+	{
+		margin:30px;
+	}
+	.banner_timer ul li 
+	{
+		 font-size: 19px !important;
+    font-weight: 300;
+    height: 90px !important;
+    width: 90px !important;
+    line-height: 30px !important;
+    margin: 0 10px !important;
+    padding-top: 20px !important;
+    text-align: center;	
+font-size:20px !important;	
+	}
+	
+}
+@media (min-width: 700px)
+{
+	.couple-name
+	{
+		top:20%;
+	}
+}
+@media (min-width: 800px)
+{
+	.banner_timer ul li span
+	{
+		font-size:38px;
+		
+	}
+	.couple-name
+	{
+		padding:0rem;
+		top:20%;
+		line-height:5.2em;
+	}
+	.couple-name .name
+	{
+		font-size:7rem;
+	}
+	.banner_timer
+	{
+		margin:5%;
+	}
+	.banner_timer ul li 
+	{
+		 font-size: 19px !important;
+    font-weight: 300;
+    height: 130px !important;
+    width: 130px !important;
+    line-height: 40px !important;
+    margin: 0 10px !important;
+    padding-top: 28px !important;
+    text-align: center;	
+font-size:28px !important;	
+	}
+	
+}
+@media (min-width: 900px)
+{
+	.banner_timer ul li span
+	{
+		font-size:32px;
+		
+	}
+	.couple-name
+	{
+		padding:0rem;
+		top:22%;
+		line-height:4em;
+	}
+	.couple-name .name
+	{
+		font-size:7rem;
+	}
+	.banner_timer
+	{
+		margin:30px;
+	}
+	.banner_timer ul li 
+	{
+		font-weight: 300;
+    height: 100px !important;
+    width: 100px !important;
+    line-height: 30px !important;
+    margin: 0 10px !important;
+    padding-top: 25px !important;
+    text-align: center;
+    font-size: 22px !important;	
+	}
+	
+}
+@media (min-width: 1200px)
+{
+	.banner_timer ul li span
+	{
+		font-size:36px;
+		
+	}
+	.couple-name
+	{
+		padding:0rem;
+		top:22%;
+		line-height:5em;
+	}
+	.couple-name .name
+	{
+		font-size:7rem;
+	}
+	.banner_timer
+	{
+		margin:40px;
+	}
+	.banner_timer ul li 
+	{
+		font-weight: 300;
+    height: 120px !important;
+    width: 120px !important;
+    line-height: 30px !important;
+    margin: 0 10px !important;
+    padding-top: 30px !important;
+    text-align: center;
+    font-size: 22px !important;	
+	}
+	
+}
+@media (min-width: 1400px)
+{
+	.banner_timer ul li span
+	{
+		font-size:38px;
+		
+	}
+	.couple-name
+	{
+		padding:0rem;
+		top:20%;
+		line-height:6em;
+	}
+	.couple-name .name
+	{
+		font-size:7rem;
+	}
+	.couple-name .name span
+	{
+		font-size:6rem;
+		display:inline;
+	}
+	.banner_timer
+	{
+		margin:60px;
+	}
+	.banner_timer ul li 
+	{
+		font-weight: 300;
+    height: 150px !important;
+    width: 150px !important;
+    line-height: 40px !important;
+    margin: 0 13px !important;
+    padding-top: 40px !important;
+    text-align: center;
+    font-size: 28px !important;	
+	}
+	.invitation
+	{
+		font-size:4rem;
+		line-height:1.5em;
+		font-family:'Tangerine', cursive;
+		font-weight:bold;
+	}
+	
+}
+.groom-bride-section
+{	
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bride-sec
+{
+	padding:4rem;
+	text-align:center;
+}
+.bride-sec span
+{
+	font-size:4em;
+}
+.bride-sec p
+{
+	margin:10px 0px 10px;
+	font-size:20px;
+}
