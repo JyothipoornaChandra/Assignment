@@ -16,27 +16,11 @@
 </head>
 </head>
 <body>
-<img class="vegas-background" src="bg1.jpg" style="position: fixed; left: 0px; top: 0px; width: 1600px; height: 906.667px; bottom: auto; right: auto;">
-<!--<img class="vegas-background" src="bg2.jpg" style="position: fixed; left: 0px; top: -167.333px; width: 1600px; height: 906.667px; bottom: auto; right: auto;">
-<img class="vegas-background" src="bg3.jpg" style="position: fixed; left: 0px; top: -167.333px; width: 1600px; height: 906.667px; bottom: auto; right: auto;">
-<div class="container-fluid">
-   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-		<div class="item active">
-			<img src="bg1.jpg" alt="Los Angeles" style="width:100%;">
-		</div>
+<img class="vegas-background" src="bg1.jpg" style="position: fixed; left: 0px; top: 0px; width: 1600px; height: 792.667px; bottom: auto; right: auto;">
 
-		<div class="item">
-			<img src="bg2.jpg" alt="Chicago" style="width:100%;">
-		</div>
-    
-		<div class="item">
-			<img src="bg3.jpg" alt="New york" style="width:100%;">
-		</div>
-	</div>    
-  </div>
-</div>-->
-<div class="couple-name">
+
+<div class="header1 clearfix">
+	<div class="couple-name">
 	<div class="name"><b> Poorna Chandra<span> weds </span>Jyothi</b></div>
 	<div class="banner_timer">
 	<ul>
@@ -47,13 +31,14 @@
 	</ul>
 	</div>
 	<div class="invitation">
-		<div>We inviting you and your family</div>
-		<div>On 21-Mar-2019</div>
+		<div>We inviting you and your family <span>On 21-Mar-2019</span></div>
 	</div>
 
-</div>
+	</div>
 	
-	<div class="menu-bar" onclick="openMenu()">
+
+</div>
+<div class="menu-bar" onclick="openMenu()">
 		<i class="fa fa-bars"> </i>	
 	</div>
 	<div id="mySidenav" class="sidenav">
@@ -66,45 +51,10 @@
 			<li> Our Memories</li>
 		</ul>		
 	</div>
-	<div class="groom-bride-section">
-			<div class="bride-sec">
-				<span>	Groom and Bride </span>
-				<p> Consectetur adipisicing elit, sed do eiusmod tempor incididunt eiusmod tempor incididunt ut labore et dolore magna Consectetur adipisicing elit,
-					</br>sed do eiusmod tempor incididunt ut labore et dolore magna.
-				</p>
-			</div>
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="groom-pic"></div>
-						<div class="groom-name"> Poorna Chandra</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="bride-pic"></div>
-						<div class="bride-name"> Jyothi</div>
-					</div>				
-				</div>
+<section>
+<div class="groom-bride-section" style="padding:40px;">
+		<h1>Poorna chandra</h1>
 	</div>
-<script>
-	var wd = new Date("2019-03-21");
-	var dateFuture = new Date(wd().getFullYear() +1, 0, 1);
-	var dateNow = new Date();
-
-	var seconds = Math.floor((dateFuture - (dateNow))/1000);
-	var minutes = Math.floor(seconds/60);
-	var hours = Math.floor(minutes/60);
-	var days = Math.floor(hours/24);
-
-	hours = hours-(days*24);
-	minutes = minutes-(days*24*60)-(hours*60);
-	seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
-	document.getElementById("days").innerHTML = days;
-	document.getElementById("hours").innerHTML = hours;
-	document.getElementById("minutes").innerHTML = minutes;
-	document.getElementById("seconds").innerHTML = seconds;
-
-
-
-</script>
+	</section>
 </body>
-
 </html>
