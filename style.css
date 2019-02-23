@@ -1,7 +1,7 @@
 body , html
 {
 	color:#333;
-	font-family:'Kaushan Script', cursive;
+	font-family:'Cookie', cursive;
 	font-style:italic;
 }
 .header1
@@ -46,9 +46,8 @@ body , html
 {
 .couple-name .name
 {
-	font-size:3em;
-	font-weight:900;
-	font-family: 'Kaushan Script', cursive;
+	font-size:3em;	
+	font-family: 'Cookie', cursive;
 	line-height:38px;
 }
 .couple-name .name span
@@ -71,7 +70,7 @@ body , html
     color: #fff;
     text-shadow: 0 1px 1px rgba(0,0,0,.5);
 	display:block;
-	font-size:30px;
+	font-size:25px;
 }
 
 .banner_timer ul li {
@@ -79,10 +78,10 @@ body , html
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     display: inline-table;
-    font-size: 12px;
-    font-weight: 300;
-    height: 70px;
-    width: 70px;
+    font-size: 10px;
+    
+    height: 60px;
+    width: 60px;
     line-height: 20px;
     margin: 0 2px;
     padding-top: 24px;
@@ -91,8 +90,8 @@ body , html
 .invitation
 {
 	font-size:30px;
-	font-family: 'Kaushan Script', cursive;
-	font-weight:bold;
+	font-family: 'Cookie', cursive;
+	
 }
 .invitation span
 {
@@ -105,8 +104,8 @@ body , html
 .couple-name .name
 {
 	font-size:4em;
-	font-weight:900;
-	font-family: 'Kaushan Script', cursive;
+	
+	font-family: 'Cookie', cursive;
 }
 .couple-name .name span
 {
@@ -137,7 +136,7 @@ body , html
     -moz-border-radius: 50%;
     display: inline-table;
     font-size: 17px;
-    font-weight: 300;
+    
     height: 110px;
     width: 110px;
     line-height: 28px;
@@ -148,8 +147,8 @@ body , html
 .invitation
 {
 	font-size:30px;
-	font-family: 'Kaushan Script', cursive;
-	font-weight:bold;
+	font-family: 'Cookie', cursive;
+	
 }
 .invitation span
 {
@@ -162,8 +161,8 @@ body , html
 .couple-name .name
 {
 	font-size:4.3em;
-	font-weight:900;
-	font-family: 'Kaushan Script', cursive;
+	
+	font-family: 'Cookie', cursive;
 }
 .couple-name .name span
 {
@@ -194,7 +193,7 @@ body , html
     -moz-border-radius: 50%;
     display: inline-table;
     font-size: 24px;
-    font-weight: 300;
+   
     height: 135px;
     width: 135px;
     line-height: 40px;
@@ -205,8 +204,8 @@ body , html
 .invitation
 {
 		font-size:35px;
-		font-family:'Kaushan Script', cursive;
-		font-weight:bold;
+		font-family:'Cookie', cursive;
+		
 }
 .invitation span
 {
@@ -219,9 +218,9 @@ body , html
 {
 .couple-name .name
 {
-	font-size:5em;
-	font-weight:900;
-	font-family: 'Kaushan Script', cursive;
+	font-size:5em;	
+	font-family: 'Great Vibes', cursive;
+	font-weight:400;
 }
 .couple-name .name span
 {
@@ -251,8 +250,7 @@ body , html
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     display: inline-table;
-    font-size: 25px;
-    font-weight: 300;
+    font-size: 25px;   
     height: 180px;
     width: 180px;
     line-height: 50px;
@@ -262,14 +260,15 @@ body , html
 }
 .invitation
 {
-		font-size:30px;
-		font-family:'Kaushan Script', cursive;
-		font-weight:bold;
+		font-size:4em;
+		font-family:'Great Vibes', cursive;
+		font-weight:300;
+		
 }
 .invitation span
 {
 	display:inline;
-	font-size:30px;
+	font-size:1em;
 }
 }
 .menu-bar
