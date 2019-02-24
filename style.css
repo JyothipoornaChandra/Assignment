@@ -121,6 +121,13 @@ body , html
 {
 	display:block;
 }
+.responsive
+{
+
+	height:250px;	
+	width:76%;	
+}
+
 }
 
 @media (min-width: 600px)
@@ -294,6 +301,14 @@ body , html
 	display:inline;
 	font-size:1em;
 }
+.responsive
+{
+	
+	height:350px;	
+	width:60%;
+	
+}
+
 }
 .menu-bar
 {
@@ -399,18 +414,16 @@ p
 	line-height:36px;
 	
 }
-.img .groom
+.responsive
 {
 	border-radius:50%;
-	width:60%;
-	height:350px;
-	border:4px solid #999;
-	
+	border:8px solid #edd03f;
+	margin-bottom:3rem;
+	box-sizing:border-box;
 }
-.img .bride
+.bridename, .groomname
 {
-	border-radius:50%;
-	width:60%;
-	height:350px;
-	border:4px solid #999;
+	font-size:3em;
+	font-family:'Great Vibes', cursive;
 }
+
