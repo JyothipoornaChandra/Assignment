@@ -1682,6 +1682,10 @@ form label {
   .fh5co-nav-toggle {
     display: block;
   }
+	.owl-carousel .owl-stage-outer
+{
+	height:450px !important;
+}
 }
 
 .btn {
