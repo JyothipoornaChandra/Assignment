@@ -1,136 +1,412 @@
-<html>
-<head>
-	<title>
-		Wedding Ceremony
-	</title>  
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>	
-	<script src="js/openmenu.js"></script>
-	<script src="js/closeNav.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="img/bg1">
-	<link href="https://fonts.googleapis.com/css?family=Merienda|Tangerine" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Cookie|Great+Vibes|Charm" rel="stylesheet">
-
-</head>
-<body>
-
-<img class="vegas-background" src="bg1.jpg" style="position: fixed; left: 0px; top: 0px; width: 1600px; height: 792.667px; bottom: auto; right: auto;">
-<div id="mask" style="display:none;">
-	<div id="loader" style="display:none"></div>
-</div>
-
-
-<div class="header1 clearfix">
-	<div class="couple-name">
-	<div class="name">Poorna Chandra<span> weds </span>Jyothi</div>
-	<div class="banner_timer">
-	<ul>
-		<li><span id="days">00</span>Days</li>
-		<li><span id="hours">00</span>Hours</li>
-		<li><span id="minutes">00</span>Minutes</li>
-		<li><span id="seconds">00</span>Seconds</li>
-		<div class="difference"> </div>
-	</ul>
-	</div>
-	<div class="invitation">
-		<div>We inviting you and your family <span>On 21-Mar-2019</span></div>
-	</div>
-
-	</div>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Wedding &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	
+	<meta name="author" content="FREEHTML5.CO" />
 
-</div>
-<div class="menu-bar" onclick="openMenu()">
-		<i class="fa fa-bars"> </i>	
-	</div>
-	<div id="mySidenav" class="sidenav">
-		<ul class="menu-items">
-			<li onclick="closenav()"> <i class="fa fa-times-circle"></i></li></a>
-			<li> Home </li>
-			<li> About us</li>
-			<li> Wedding Invitation</li>
-			<li> Our family </li>
-			<li> Our Memories</li>
-		</ul>		
-	</div>
-<div style="position:relative;">
-<section>
-<article id="about_us" class="groom-bride-section" style="padding:40px;background:#fff">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-			<h2> Groom and Bride </h2>
-			<p class="grrom"> Consectetur adipisicing elit, sed do eiusmod tempor incididunt eiusmod tempor incididunt ut labore et dolore magna 
-				Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-		</div>
-		<div class="row">
-			<div class="col-sm-6" style="text-align:center">
-				<div class="img">
-					<img src="tiger.jpg" class="responsive">
-					<div class="groomname"> Poorna chandra </div>
-				</div>
-			</div>
-			<div class="col-sm-6" style="text-align:center;">
-				<div class="img">
-					<img src="tiger.jpg" class="responsive">
-					<div class="bridename"> Jyothi </div>
-				</div>
-			</div>
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
 		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Cookie|Great+Vibes|Charm|IM+Fell+Great+Primer|Dosis" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cookie|Dancing+Script|Molle:400i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>						
+						<li class="has-dropdown">
+							
+							<ul class="dropdown">
+								<li><a href="#">Web Design</a></li>
+								<li><a href="#">eCommerce</a></li>
+								<li><a href="#">Branding</a></li>
+								<li><a href="#">API</a></li>
+							</ul>
+						</li>
+						<li class="has-dropdown">
+							<a href="">Gallery</a>
+							
+						</li>
+						<li><a href="contact.html"></a></li>
+					</ul>
+				</div>
+			</div>
+			
 		</div>
-	</div>
-	</div>
-</article>
-<article id="weddinginvitation" >
-<div class="aboutusbelow">
-<div class="aboutusbelow1">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="row">
-					<h1>Wedding invitation</h1>
-					<div class="col-md-4">
-						<img src="http://www.lanternthemes.com/themes/wedding/html/img/flower.png" style="width:50%;">
+	</nav>
+
+	<div class="headre">
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/bg.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>Poorna Chandra &amp; Jyothi</h1>
+							<h2>We Are Getting Married</h2>
+							<div class="simply-countdown simply-countdown-one"></div>
+							
+						</div>
 					</div>
-					<div class="col-md-8" style="text-align:left">
-						<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt eiusmod tempor incididunt ut 
-						labore et dolore magna consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. 
-						Consectetur adipisicing elit, sed do eiusmod tempor <br>incididunt eiusmod tempor incididunt 
-						ut labore et dolore magna consectetur adipisicing elit.Incididunt eiusmod tempor incididunt ut labore et dolore
-						magna consectetur adipisicing, sed do eiusmod tempor incididunt ut labore et dolore magna. 						
-						Consectetur elit, sed do eiusmod tempor indor eiusmod tempor incididun.</p>
-					<div class="sincerly">Sincerly<br>Jyothi & Chandr4</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	</div>
+
+	<div id="fh5co-couple">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="font-family:'Great Vibes',Cursive">
+					<h2>Hello!</h2>
+					<h3 style="font-size:32px">March 21st, 2019</h3>
+					<p style="font-size:32px;">We invited you to celebrate our wedding</p>
+				</div>
+			</div>
+			<div class="couple-wrap animate-box">
+				<div class="couple-half">
+					<div class="groom">
+						<img src="images/img1.jpeg" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-groom">
+						<h3>Poorna Chandra</h3>
+					</div>
+				</div>
+				<p class="heart text-center"><i class="icon-heart2"></i></p>
+				<div class="couple-half">
+					<div class="bride">
+						<img src="images/img3.jpeg" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-bride">
+						<h3>Jyothi</h3>
+					
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-</div>
-</article>
-	</section>
 
+	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/cermony.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span style="font-family: 'IM Fell Great Primer', serif;">Our Special Events</span>
+					<h2>Wedding Events</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Muhurtham</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>09:30 AM</span>
+										<span>10:45 AM</span>
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>Thursday 21</span>
+										<span>March, 2019</span>
+									</div>
+									<p>Bridgeroom Residence <br> Bommanahal Village <br> Raydurga Tq.,<br> Ananthapur Dist(AP)</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Reception</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>12:00 PM</span>
+										
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>Sunday 24</span>
+										<span>March, 2019</span>
+									</div>
+									<p> Basava Mahamane Kalyana Mantapa <br> 18th cross,Near Siddganga school,<br>2nd Main Road, K.T.G. Nagar, <br> Davanagere</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-		<script>
-endDate = new Date(2019,2,21,21,00,00,0).getTime();
-setInterval(function(){
-startDate = new Date().getTime();
-getMilliSeconds = endDate - startDate;
-days = Math.floor(getMilliSeconds/(1000*60*60*24));
-hours = Math.floor( (getMilliSeconds % (1000*60*60*24)) /(1000*60*60));
-minutes = Math.floor((getMilliSeconds % (1000*60*60)) /(1000*60));
-seconds = Math.floor((getMilliSeconds % (1000*60) )/(1000));
-console.log(days+" "+hours+" "+minutes+" "+seconds);
-document.getElementById("days").innerHTML = days;
-console.log(document.getElementById("days"));
-document.getElementById("hours").innerHTML = hours;
-document.getElementById("minutes").innerHTML = minutes;
-document.getElementById("seconds").innerHTML = seconds;
-},1000);
+
+	
+	<div id="fh5co-gallery" class="fh5co-section-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Our Memories</span>
+					<h2>Wedding Gallery</h2>
+					
+				</div>
+			</div>
+			<div class="row row-bottom-padded-md">
+				<div class="col-md-12">
+					<ul id="fh5co-gallery-list">
+						
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img4.jpeg); "> 
+						<a href="images/img4.jpeg">
+							
+						</a>
+					</li>
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img2.jpeg); ">
+						<a href="#" class="color-2">
+							
+						</a>
+					</li>
+
+
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img3.jpeg); ">
+						<a href="#" class="color-3">
+							
+						</a>
+					</li>
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/immp.jpg); ">
+						<a href="#" class="color-4">
+							
+						</a>
+					</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img6.jpg); ">
+							<a href="#" class="color-3">
+								
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/imgk.jpg); ">
+							<a href="#" class="color-4">
+								
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/walk.jpg); ">
+							<a href="#" class="color-4">
+								
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/walkc.jpg); "> 
+							<a href="#" class="color-5">
+								
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/both.jpg); ">
+							<a href="#" class="color-6">
+								
+							</a>
+						</li>
+					</ul>		
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div id="fh5co-testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<span>Best Wishes</span>
+						<h2>Family Members</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<div class="wrap-testimony">
+							<div class="owl-carousel-fullwidth" style="margin-left:13%;">								
+								<div class="item">									
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-2.jpg" alt="user">
+										</figure>
+										<span> Thippeswamy </span>
+										
+									</div>
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-2.jpg" alt="user">
+										</figure>
+										<span>Nagaveni</span>
+										
+									</div>
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-2.jpg" alt="user">
+										</figure>
+										<span>Surendra </span>
+										
+									</div>
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-2.jpg" alt="user">
+										</figure>
+										<span>Mohan </span>
+										
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-2.jpg" alt="user">
+										</figure>
+										<span> Thippeswamy </span>
+										
+									</div>
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-2.jpg" alt="user">
+										</figure>
+										<span>Vedavathi</span>
+										
+									</div>
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-2.jpg" alt="user">
+										</figure>
+										<span>Asha </span>
+										
+									</div>
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-2.jpg" alt="user">
+										</figure>
+										<span>Kavitha </span>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+				
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<script src="js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+		
+
+	<script>
+    var d = new Date(new Date(2019,2,21).getTime() + 200 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
 </script>
-</body>
+
+	</body>
 </html>
+
