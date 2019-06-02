@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>Dashboard</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="json.js"></script>
+		
+	</head>
+	<body>
+		<div class="main-page">
+			<div class="header-sec">
+			<div class="row">
+				<div class="col-sm-8">
+					<h2>Your Plant Name</h2>
+					<p style="font-weight:600;"> Unit-1 capacity 250 MW</p>
+					<p style="color:#847676;font-size:12px;font-weight:600;display:inline;float:left">18 Dec 2018, 2:50PM, Legend:
+						<ul class="header-list">
+							<li>Low performance Gap</li>
+							<li>Medium Performance Gap</li>
+							<li>High Performance Gap</li>
+						</ul>
+					
+					</p>
+				</div>
+				<div class="col-sm-4">
+					 
+					 <div class="dropdown">
+					 <div class="select-plant">Select Plant</div>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Your Pane Name
+						<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Pane 1</a></li>
+							<li><a href="#">Pane 2</a></li>
+							<li><a href="#">Pane 3</a></li>
+						</ul>
+					</div>
+					
+					<div class="dropdown">
+					<div class="unit">Select Unit</div>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Unit-1:
+						<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Unit 2</a></li>
+							<li><a href="#">Unit 3</a></li>
+							<li><a href="#">Unit 4</a></li>
+						</ul>
+					</div>
+				</div>
+			</div> 
+			</div><!--End of header-->
+			<div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="panels power-output">
+							<h3 id="1panel">  </h3>
+							<p id="1unit"></p>
+							<div class="operating" id="1value"> </div>
+							<ul>
+								<li style="float:left;margin-left:-40px;" id="1design"></li>
+								<li id="1corrected"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="panels turbine">
+							<h3 id="2panel"> </h3>
+							<p id="2unit"></p>
+							<div class="operating" id="2value"> </div>
+							<ul>
+								<li style="float:left;margin-left:-40px;" id="2design">Design:</li>
+								<li id="2corrected">Corrected:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="panels boilereffic">
+							<h3 id="3panel">  </h3>
+							<p id="3unit"> </p>
+							<div class="operating" id="3value"> </div>
+							<ul>
+								<li style="float:left;margin-left:-40px;" id="3design"></li>
+								<li id="3corrected">Corrected:</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+								<div class="row">
+					<div class="col-sm-4">
+						<div class="panels unitgross">
+							<h3 id="4panel">  </h3>
+							<p id="4unit">mv</p>
+							<div class="operating" id="4value">123.33 </div>
+							<ul>
+								<li style="float:left;margin-left:-40px;" id="4design">Design:</li>
+								<li id="4corrected">Corrected:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="panels plant-effic">
+							<h3 id="5panel">  </h3>
+							<p id="5unit">mv</p>
+							<div class="operating" id="5value" style="background-color:#f0442dc9">123.33 </div>
+							<ul>
+								<li style="float:left;margin-left:-40px;" id="5design">Design:</li>
+								<li id="5corrected">Corrected:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="panels coal-firing">
+							<h3 id="6panel">  </h3>
+							<p id="6unit">mv</p>
+							<div class="operating" id="6value" style="background-color:#fdd226b8">  123.33</div>
+							<ul>
+								<li style="float:left;margin-left:-40px;" id="6design">Design:</li>
+								<li id="6corrected">Corrected:</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		
+		</div>
+	
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</html>

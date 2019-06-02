@@ -1,0 +1,87 @@
+.main-page
+{
+	margin: 1%;
+    padding: 2rem 2rem 1rem 2rem;
+    border: 1px solid #9c9c9c78;
+	box-shadow: 0px 0px 2px 1px #cccccc63;
+}
+.header-sec
+{
+	padding:1rem 4rem 4rem 1rem;
+}
+.header-sec h2
+{
+	font-weight:800;
+}
+.header-sec p
+{
+	margin:0px !important;
+	font-size:16px;
+}
+.header-list li
+{
+	list-style-type:none;
+	font-size:12px;
+	font-weight:600;
+	display:inline;
+	float:left;
+	padding:0px 6px;
+	border-right:2px solid #ccc;
+}
+.header-list li:nth-child(1)
+{
+	color:#28b4639e;
+}
+.header-list li:nth-child(2)
+{
+	color:#fdd226b8;
+}
+.header-list li:nth-child(3)
+{
+	color:#f0442dc9;
+}
+.select-plant
+{
+	margin-right:6%;
+}
+.unit
+{
+	margin-left:20%;
+	margin-right:6%
+}
+.btn
+{
+	margin-left:2%;
+}
+.dropdown
+{
+	display:-webkit-box;
+	float:left;
+}
+.panels
+{
+	box-shadow: 0px 0px 1px 0px #9c9c9c78;
+    margin-bottom: 10%;
+    padding: 2rem 4rem;
+}
+.panels h3
+{
+	margin-top:0%;
+	font-weight:600;
+}
+.operating
+{
+	background:#a0d19e;
+	padding:1rem;
+}
+.panels li
+{
+	list-style-type:none;
+	display:inline;
+	float:right;
+}
+.dropdown-menu
+{
+	min-width:107px !important;
+	left:87px !important;
+}
