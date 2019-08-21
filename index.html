@@ -1,133 +1,83 @@
 <html>
-	<head>
-		<title>Dashboard</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="style.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="json.js"></script>
-		
-	</head>
-	<body>
-		<div class="main-page">
-			<div class="header-sec">
-			<div class="row">
-				<div class="col-sm-8">
-					<h2>Your Plant Name</h2>
-					<p style="font-weight:600;"> Unit-1 capacity 250 MW</p>
-					<p style="color:#847676;font-size:12px;font-weight:600;display:inline;float:left">18 Dec 2018, 2:50PM, Legend:
-						<ul class="header-list">
-							<li>Low performance Gap</li>
-							<li>Medium Performance Gap</li>
-							<li>High Performance Gap</li>
-						</ul>
-					
-					</p>
-				</div>
-				<div class="col-sm-4">
-					 
-					 <div class="dropdown">
-					 <div class="select-plant">Select Plant</div>
-						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Your Pane Name
-						<span class="caret"></span></button>
-						<ul class="dropdown-menu">
-							<li><a href="#">Pane 1</a></li>
-							<li><a href="#">Pane 2</a></li>
-							<li><a href="#">Pane 3</a></li>
-						</ul>
-					</div>
-					
-					<div class="dropdown">
-					<div class="unit">Select Unit</div>
-						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Unit-1:
-						<span class="caret"></span></button>
-						<ul class="dropdown-menu">
-							<li><a href="#">Unit 2</a></li>
-							<li><a href="#">Unit 3</a></li>
-							<li><a href="#">Unit 4</a></li>
-						</ul>
-					</div>
-				</div>
-			</div> 
-			</div><!--End of header-->
-			<div>
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="panels power-output">
-							<h3 id="1panel">  </h3>
-							<p id="1unit"></p>
-							<div class="operating" id="1value"> </div>
-							<ul>
-								<li style="float:left;margin-left:-40px;" id="1design"></li>
-								<li id="1corrected"></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="panels turbine">
-							<h3 id="2panel"> </h3>
-							<p id="2unit"></p>
-							<div class="operating" id="2value"> </div>
-							<ul>
-								<li style="float:left;margin-left:-40px;" id="2design">Design:</li>
-								<li id="2corrected">Corrected:</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="panels boilereffic">
-							<h3 id="3panel">  </h3>
-							<p id="3unit"> </p>
-							<div class="operating" id="3value"> </div>
-							<ul>
-								<li style="float:left;margin-left:-40px;" id="3design"></li>
-								<li id="3corrected">Corrected:</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-								<div class="row">
-					<div class="col-sm-4">
-						<div class="panels unitgross">
-							<h3 id="4panel">  </h3>
-							<p id="4unit">mv</p>
-							<div class="operating" id="4value">123.33 </div>
-							<ul>
-								<li style="float:left;margin-left:-40px;" id="4design">Design:</li>
-								<li id="4corrected">Corrected:</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="panels plant-effic">
-							<h3 id="5panel">  </h3>
-							<p id="5unit">mv</p>
-							<div class="operating" id="5value" style="background-color:#f0442dc9">123.33 </div>
-							<ul>
-								<li style="float:left;margin-left:-40px;" id="5design">Design:</li>
-								<li id="5corrected">Corrected:</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="panels coal-firing">
-							<h3 id="6panel">  </h3>
-							<p id="6unit">mv</p>
-							<div class="operating" id="6value" style="background-color:#fdd226b8">  123.33</div>
-							<ul>
-								<li style="float:left;margin-left:-40px;" id="6design">Design:</li>
-								<li id="6corrected">Corrected:</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Visitor Management — Atithi Devo Bhava</title>	
+	<link rel="stylesheet" href="https://vanderlanth.io/assets/css/main.css">
+    <link href="realthread.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://assets.website-files.com/5ccc8aa73871f9d0b1c81c04/js/realthread.a696d0f9d.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Alice|Berkshire+Swash|Cinzel+Decorative|Faster+One|Fondamento|Merienda|Overlock|PT+Serif+Caption|Patrick+Hand+SC|Pattaya|Permanent+Marker|Playball&display=swap" rel="stylesheet">
+<style>
+
+    
+</style>
+    </head>
+    
+        <div class="signature">
+		  <svg viewBox="0 0 84 84">
+		    <defs>
+		      <path d="M 0,42 a 42,42 0 1,1 0,1 z" id="circle"></path>
+		    </defs>
+		    <text>
+		      <textPath xlink:href="#circle">-Atithi Devo Bhava-ಅತಿಥಿ ದೇವೋ ಭವ-Atithi Devo Bhava</textPath>
+		  	</text>
+		  </svg>
+		  <img class="signature__img" src="images/Namaste-Logo.png" alt="">
 		</div>
-	
-	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <div>
+        <section class="vmgmnt hero-container">
+            <div class="v-head" style="margin: 5% 4% 4% 10%">
+                <div class="v-headercontainer">
+                    <span> <img class="info-cloud" src="images/info-cloud.JPG" alt="infocloud logo" ></span>
+                    <span class="v-title"> Atithi </span>                    
+                </div>
+                <div class="row intro-content">
+                    <div class="col-sm-6">
+                        <p>A visit to Remember/Relish Enhance your customers visit expereince Brand your Organization One window H/w & S/W solution for visitor management & office collaboration </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="gif1" src="images/gif1.jpg" alt="Gif image">
+                    </div>
+                </div>
+                <nav class="menu-items">
+                    <span class="li-items" style="padding-left:0px"><a href="">  A Pleasent Experience  </a></span>
+                    <span class="li-items"><a href="">  Sign-In & Security     </a></span>
+                    <span class="li-items"><a href="">  Document & Declaration</a></span>
+                    <span class="li-items"><a href="">  Meeting Hall Booking & MOM </a></span>
+                    <span class="li-items"><a href="">  Cafeteria </a></span>
+                    <span class="li-items"><a href="">  Integration </a></span>
+                </nav>
+            </div>    
+        </section>
+    </div>
+     <div class="testimonials">
+            <div class="testimonials-feed w-dyn-list">
+                <div class="testimonials-list w-dyn-items">
+                    <div data-w-id="010a9fad-9312-4efc-6ad4-122b89f576cc" class="testimonials-item w-dyn-item">
+                        <div class="testimonials-content columns-6">
+                            <div data-w-id="95bc5c36-c97c-39f7-0397-95b5e5a4a946" class="img-swipe img-swipe-gray"></div>
+                            <div data-w-id="5652fcf2-4c45-4a17-f185-0969cc345ac5" class="testimonials-content-inner">
+                                <h4 data-w-id="09e21af4-1abe-5b97-33aa-0887b5c8ee39" class="testimonials-content-heading">MeetingHall Bookoing</h4>
+                                <div data-w-id="3aeacf90-7eed-ae06-be95-b932188799ac" class="testimonials-text">The out come of a meeting is often diluted with our own busy schedules and calendars and hence we bring in this feature to make minutes of meeting which can assign tasks to stake holders and monitor their completion making the meetings more productive and fruitful. Each meeting comes with productivity rating and completion percentage so that we actually know how productive our meetings are!</div>
+                            </div>
+                        </div>
+                        <div class="testimonials-product columns-7">
+                            <div class="img-swipe-wrapper img-swipe-wrapper-block">
+                                <div data-w-id="e332f1a0-6dbb-e07e-a56f-bb94a2880772" class="img-swipe img-swipe-green"></div>
+                                <div data-w-id="0ba4ec04-338e-78c7-e2d3-c2dd5300a4e6" class="testimonials-product-gradient"></div>
+                                <img data-w-id="890bc4b7-b1ed-0583-1a0a-f6c61c1d4901" src="https://assets.website-files.com/5ccc8aa73871f9d12dc81c1b/5d24f355b7cf8068f87c1164_itiswritten.jpg" alt="Lindsay W." sizes="(max-width: 767px) 100vw, (max-width: 991px) 53vw, 39vw" srcset="https://assets.website-files.com/5ccc8aa73871f9d12dc81c1b/5d24f355b7cf8068f87c1164_itiswritten-p-500.jpeg 500w, https://assets.website-files.com/5ccc8aa73871f9d12dc81c1b/5d24f355b7cf8068f87c1164_itiswritten-p-800.jpeg 800w, https://assets.website-files.com/5ccc8aa73871f9d12dc81c1b/5d24f355b7cf8068f87c1164_itiswritten-p-1080.jpeg 1080w, https://assets.website-files.com/5ccc8aa73871f9d12dc81c1b/5d24f355b7cf8068f87c1164_itiswritten.jpg 1400w" class="testimonials-featured-img"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
 </html>
