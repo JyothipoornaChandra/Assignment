@@ -1,83 +1,236 @@
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Visitor Management — Atithi Devo Bhava</title>	
-	<link rel="stylesheet" href="https://vanderlanth.io/assets/css/main.css">
+	
     <link href="realthread.min.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://vanderlanth.io/assets/css/main.css">
+    <link rel="stylesheet" href="cssstyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <script src="realthread.js"></script>
+    <script src="jquery.min.js"></script>
+     <link rel="stylesheet" href="https://vanderlanth.io/assets/css/main.css">
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://assets.website-files.com/5ccc8aa73871f9d0b1c81c04/js/realthread.a696d0f9d.js" type="text/javascript"></script>
     <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Alice|Berkshire+Swash|Cinzel+Decorative|Faster+One|Fondamento|Merienda|Overlock|PT+Serif+Caption|Patrick+Hand+SC|Pattaya|Permanent+Marker|Playball&display=swap" rel="stylesheet">
-<style>
 
+   <script>
+        window.onload = function() {
+        var loadtitle = document.getElementById('animtitle');
+        loadtitle.style.animation = animate 5s linear;
+
+    </script>
+      <script>
+          
+    var animated = $(".introAnim");
+          
+
+function beginAnim() {
+  $("#animLogo").slideUp ();
+  introAnimation();
+}
+
+function introAnimation() {
+  $(".introAnim:eq(0)").animate({ height: 0 }, 800);
+  $(".introAnim:eq(1)").animate({ height: 0 }, 800);
+  $(".introAnim:eq(2)").animate({ height: 0 }, 800);
+  $(".introAnim:eq(3)").animate({ height: 0 }, 800);
+  setTimeout(endAnim, 1800);
+}
+
+function endAnim() {
+  $(".screenloader").remove();
+}
+setTimeout(beginAnim, 1600);
+</script>
+<title>
     
-</style>
-    </head>
+    </title>    
+    <style>
     
-        <div class="signature">
+    html {
+cursor:auto;
+}
+#animLogo {
+  z-index: 9999999999;
+  position: fixed;
+  width: 20rem;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%) translateY(-50%);
+}
+        #animtitle
+        {
+        
+    font-size: 2.1em;
+    width: 146%;
+    box-sizing: border-box;
+    font-family: Fondamento, cursive;
+    color: #fff8dc;
+    text-align: left;
+            margin-left: -10%;
+        }
+        
+.signature
+    {
+               width: auto;
+    min-height: 400px;
+    position: relative;
+    text-align: center;
+    margin: 10% auto;
+      
+    
+}
+    
+    .signature svg {
+    width: 100%;        
+    height: 100%;
+    font-family: Px;
+    text-transform: uppercase;
+    display: block;
+    overflow: visible;
+    font-size: 10px;
+    position: relative;
+    -webkit-animation: rotate 10s linear infinite;
+    animation: rotate 20s linear infinite;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+        opacity: 1 !important;
+}
+    *, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    .signature__img {
+    position: absolute;
+    top: 45%;
+    left: 52%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    width: 145px;
+    }
+    .signature svg text, .signature svg textPath
+    {
+            font-weight: 100!important;
+    -webkit-font-smoothing: antialiased!important;
+    -moz-osx-font-smoothing: grayscale!important;
+    text-rendering: optimizeSpeed!important;
+        color:rgba(23, 80, 78, 0.71) !important;
+          font-size:.86em;
+        font-family: Alice, serif;
+
+    }
+    ::after, ::before {
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+    *, ::after, ::before {
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+}
+    audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+.introAnim {
+  display: block;
+  height: 25%;
+  background: #00c9eb;
+  background: -moz-linear-gradient(top, #00c9eb 0%, #00c9eb 100%);
+  background: -webkit-linear-gradient(top, #ff7400 0%, #00c9eb 100%);
+  background: linear-gradient(to bottom, #00c9eb 0%, #00c9eb 100%);
+  width: 100%;
+  z-index: 9999999;
+  top: 0;
+}
+
+.animA {
+  position: absolute;
+  top: 0;
+  border-right: 0.0625em solid #fff;
+}
+
+.animB {
+  position: absolute;
+  top: 25%;
+  border-right: 0.0625em solid #fff;
+}
+
+.animC {
+  position: absolute;
+  top: 50%;
+  border-right: 0.0625em solid #fff;
+}
+
+.animD {
+  position: absolute;
+  top: 75%;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="signature" id="animLogo">
 		  <svg viewBox="0 0 84 84">
 		    <defs>
 		      <path d="M 0,42 a 42,42 0 1,1 0,1 z" id="circle"></path>
 		    </defs>
 		    <text>
-		      <textPath xlink:href="#circle">-Atithi Devo Bhava-ಅತಿಥಿ ದೇವೋ ಭವ-Atithi Devo Bhava</textPath>
+		      <textPath xlink:href="#circle">-Atithi Devo Bhava-ಅತಿಥಿ ದೇವೋ ಭವ-Atithi Devo Bhava-ಅತಿಥಿ ದೇವೋ ಭವ</textPath>
 		  	</text>
 		  </svg>
 		  <img class="signature__img" src="images/Namaste-Logo.png" alt="">
+            <p class="title" id="animtitle"> Welcome A Royal Experience</p>
 		</div>
-    <div>
-        <section class="vmgmnt hero-container">
-            <div class="v-head" style="margin: 5% 4% 4% 10%">
-                <div class="v-headercontainer">
-                    <span> <img class="info-cloud" src="images/info-cloud.JPG" alt="infocloud logo" ></span>
-                    <span class="v-title"> Atithi </span>                    
-                </div>
-                <div class="row intro-content">
-                    <div class="col-sm-6">
-                        <p>A visit to Remember/Relish Enhance your customers visit expereince Brand your Organization One window H/w & S/W solution for visitor management & office collaboration </p>
-                    </div>
-                    <div class="col-sm-6">
-                        <img class="gif1" src="images/gif1.jpg" alt="Gif image">
-                    </div>
-                </div>
-                <nav class="menu-items">
-                    <span class="li-items" style="padding-left:0px"><a href="">  A Pleasent Experience  </a></span>
-                    <span class="li-items"><a href="">  Sign-In & Security     </a></span>
-                    <span class="li-items"><a href="">  Document & Declaration</a></span>
-                    <span class="li-items"><a href="">  Meeting Hall Booking & MOM </a></span>
-                    <span class="li-items"><a href="">  Cafeteria </a></span>
-                    <span class="li-items"><a href="">  Integration </a></span>
-                </nav>
-            </div>    
-        </section>
-    </div>
-     <div class="testimonials">
-            <div class="testimonials-feed w-dyn-list">
-                <div class="testimonials-list w-dyn-items">
-                    <div data-w-id="010a9fad-9312-4efc-6ad4-122b89f576cc" class="testimonials-item w-dyn-item">
-                        <div class="testimonials-content columns-6">
-                            <div data-w-id="95bc5c36-c97c-39f7-0397-95b5e5a4a946" class="img-swipe img-swipe-gray"></div>
-                            <div data-w-id="5652fcf2-4c45-4a17-f185-0969cc345ac5" class="testimonials-content-inner">
-                                <h4 data-w-id="09e21af4-1abe-5b97-33aa-0887b5c8ee39" class="testimonials-content-heading">MeetingHall Bookoing</h4>
-                                <div data-w-id="3aeacf90-7eed-ae06-be95-b932188799ac" class="testimonials-text">The out come of a meeting is often diluted with our own busy schedules and calendars and hence we bring in this feature to make minutes of meeting which can assign tasks to stake holders and monitor their completion making the meetings more productive and fruitful. Each meeting comes with productivity rating and completion percentage so that we actually know how productive our meetings are!</div>
+    
+    <div class="screenloader" style="height:100vh; position: fixed; width:100vw; top:0; left:0; z-index:1;">
+  <div class="introAnim animA"></div>
+  <div class="introAnim animB"></div>
+  <div class="introAnim animC"></div>
+  <div class="introAnim animD"></div>
+        
+</div>
+    <div class="section1" id="section1">
+            <div class="sec1-main">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="heading-sec">
+                            <div class="vheading-title">
+                                <div class="logo"></div>
+                                <div class="heading-title"><h1> Athithi </h1></div>
                             </div>
+                            <div class="sec1-content">
+                                    A visit to Remember/Relish Enhance your customers visit expereince Brand your Organization One window H/w & S/W solution for visitor management & office collaboration
+                            </div>
+                        </div>                
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="socialmedia">
+                            <span style="margin-left:35%">  Sign Up </span>
+                            <span>  Sign In </span>
+                            <img src="/icons/facebook.png" width="30px" height="30px">
+                            <img src="/icons/linkedin.png" width="30px" height="30px">
                         </div>
-                        <div class="testimonials-product columns-7">
-                            <div class="img-swipe-wrapper img-swipe-wrapper-block">
-                                <div data-w-id="e332f1a0-6dbb-e07e-a56f-bb94a2880772" class="img-swipe img-swipe-green"></div>
-                                <div data-w-id="0ba4ec04-338e-78c7-e2d3-c2dd5300a4e6" class="testimonials-product-gradient"></div>
-                                <img data-w-id="890bc4b7-b1ed-0583-1a0a-f6c61c1d4901" src="https://assets.website-files.com/5ccc8aa73871f9d12dc81c1b/5d24f355b7cf8068f87c1164_itiswritten.jpg" alt="Lindsay W." sizes="(max-width: 767px) 100vw, (max-width: 991px) 53vw, 39vw" srcset="https://assets.website-files.com/5ccc8aa73871f9d12dc81c1b/5d24f355b7cf8068f87c1164_itiswritten-p-500.jpeg 500w, https://assets.website-files.com/5ccc8aa73871f9d12dc81c1b/5d24f355b7cf8068f87c1164_itiswritten-p-800.jpeg 800w, https://assets.website-files.com/5ccc8aa73871f9d12dc81c1b/5d24f355b7cf8068f87c1164_itiswritten-p-1080.jpeg 1080w, https://assets.website-files.com/5ccc8aa73871f9d12dc81c1b/5d24f355b7cf8068f87c1164_itiswritten.jpg 1400w" class="testimonials-featured-img"/>
-                            </div>
+                        <div class="vedio">
+                            <video src="vedios/VMGNT.mp4" autoplay controls loop = "infinite"></video>    
                         </div>
                     </div>
+                </div>
+                <div class="sticky-menu">
+                    <nav class="menu-item">
+                    <a href="#section2"> A Pleasent Experience </a>
+                    <a href="#section3"> Sign In & Security </a>
+                    <a href="#section3"> Documnet & Declaration </a>
+                    <a href="#section5">Meeting hall Booking & MOM </a>
+                    <a href="#section6"> Cafeteria & Travel</a>
+                    <a href="#section6"> Integration </a>
+                    </nav>
                 </div>
             </div>
-        </div> 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
+        </div>
+    </body>
 </html>
