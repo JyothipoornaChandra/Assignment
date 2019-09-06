@@ -1,0 +1,252 @@
+<html>
+<head>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Alice|Berkshire+Swash|Cinzel+Decorative|Faster+One|Fondamento|Merienda|Overlock|PT+Serif+Caption|Patrick+Hand+SC|Pattaya|Permanent+Marker|Playball&display=swap" rel="stylesheet">
+
+    <Style>
+       @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+body {
+  background-color: #f8f8f8;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+    text-align: center;
+}
+.price-table
+{
+    margin: auto;
+}
+
+.row {
+  min-height: 100vh;
+}
+
+.card {
+  border: 0;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+  transition: all .3s ease-in-out;
+  padding: 1rem 0;
+  position: relative;
+  will-change: transform;
+  margin-top: 14%;
+    font-family: Fondamento, cursive;
+  border-radius:4px;
+}
+.card:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background-color: #57e2b2;
+  transition: 0.5s;
+}
+.card-header
+{
+    padding: .2rem 1.25rem !important;
+}
+.card:hover {
+  transform: scale(1.05);
+  -webkit-box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+}
+.card:hover:after {
+  width: 100%;
+}
+.card .card-header {
+  background-color: white;
+    background: linear-gradient(to right,blue,skyblue);
+  padding-left: 2rem;
+  border-bottom: 0px;
+  color: #fff;
+}
+.card .card-title {
+  margin-bottom: 1rem;
+}
+.card .card-block {
+  padding-top: 18px;
+  font-size: 1em;
+}
+.card .list-group
+{
+    padding-bottom: 2rem;
+    border-bottom: 2px solid;
+    border-bottom-color: deepskyblue;
+}
+.card .list-group-item {
+  border: 0px;
+  padding: .25rem;
+  color: #808080;
+  font-weight: 300;
+}
+
+.display-2 {
+  font-size: 2rem;
+  
+}
+.display-2 .currency {
+  font-size: 1rem;
+  position: relative;
+  font-weight: 400;
+  top: -9px;
+  letter-spacing: 0px;
+}
+.display-2 .period {
+  font-size: 1rem;
+  color: #b3b3b3;
+  letter-spacing: 0px;
+    padding-left: .8rem;
+    color: #fff;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: .65rem;
+  font-weight: 500;
+  color: #a6a6a6;
+  border-radius: 4px;
+  padding: .45rem 1.25rem;
+  letter-spacing: 1px;
+  margin-top: 10% !important;
+  
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, blue, skyblue);
+  transition: background .3s ease-in-out;
+  color:#fff;
+}
+.btn-gradient:hover {
+  color: white;
+  background-color: #57e2b2;
+}
+.text-header
+{
+    padding: 1rem 2rem;
+}
+.cardicon
+{
+    line-height: 3em;
+}
+.cardicon .cardicon-font
+{
+    background: linear-gradient(to right, blue, skyblue);
+    padding: 1rem;
+    border-radius: 60%;
+    display: inline-block;
+    line-height: 1em;
+}
+.plan
+{
+    display:block;
+    font-size: 1.5em;
+}
+.getPlan
+{
+    
+}
+    </Style>
+    </head>
+<div class="container">
+  <div class="row flex-items-xs-middle flex-items-xs-center" style="min-height:0vh !important;height:80vh">
+
+    <!-- Table #1  -->
+    <div class="col-sm-3">
+      <div class="card text-xs-center">
+        <div class="text-header">
+            <div class="cardicon">
+                <span class="cardicon-font"><i class="fa fa-address-book-o" style="color: #fff"></i></span>
+                <span class="Plan"> Silver </span>
+            </div>
+        </div>
+        <div class="card-header">
+          <h3 class="display-2"><span class="currency">$</span>19<span class="period">/month</span></h3>
+        </div>
+        <div class="card-block">
+
+          <ul class="list-group">
+            <li class="list-group-item">Security Login</li>
+            <li class="list-group-item">Raise Request</li>
+            <li class="list-group-item">Notification</li>
+            <li class="list-group-item">Reports</li>
+            <li class="list-group-item">Photo Capture</li>
+            <li class="list-group-item">Digital Signature</li>
+          </ul>
+            <a href="#" class="btn btn-gradient mt-2"><div class="getPlan">Choose Plan</div></a>
+        </div>
+      </div>
+    </div>
+       <div class="col-sm-3">
+      <div class="card text-xs-center">
+        <div class="text-header">
+            <div class="cardicon">
+                <span class="cardicon-font"><i class="fa fa-address-book-o" style="color: #fff"></i></span>
+                <span class="Plan"> Gold </span>
+            </div>
+        </div>
+        <div class="card-header">
+          <h3 class="display-2"><span class="currency">$</span>19<span class="period">/month</span></h3>
+        </div>
+        <div class="card-block">
+
+          <ul class="list-group">
+            <li class="list-group-item">Silver +</li>
+            <li class="list-group-item">Calendar & Schedulings</li>
+            <li class="list-group-item">Custom Notifications</li>
+            <li class="list-group-item">Integration</li>
+            <li class="list-group-item">Reports</li>
+            <li class="list-group-item">Approvals</li>
+            <li class="list-group-item">Announcements</li>
+            <li class="list-group-item">Feedback & Ratings</li>
+            <li class="list-group-item">Raise Requests</li>
+          </ul>
+            <a href="#" class="btn btn-gradient mt-2"><div class="getPlan">Choose Plan</div></a>
+        </div>
+      </div>
+    </div>
+       <div class="col-sm-3">
+      <div class="card text-xs-center">
+        <div class="text-header">
+            <div class="cardicon">
+                <span class="cardicon-font"><i class="fa fa-address-book-o" style="color: #fff"></i></span>
+                <span class="Plan"> Platinum </span>
+            </div>
+        </div>
+        <div class="card-header">
+          <h3 class="display-2"><span class="currency">$</span>19<span class="period">/month</span></h3>
+        </div>
+        <div class="card-block">
+
+          <ul class="list-group">
+            <li class="list-group-item">Gold +</li>
+            <li class="list-group-item">Schedulings</li>
+            <li class="list-group-item">SMS Notifications</li>
+            <li class="list-group-item">Broadcasting</li>
+            <li class="list-group-item">Feedback & Ratings</li>
+            <li class="list-group-item">Cab Management</li>
+            <li class="list-group-item">Integration</li>
+            <li class="list-group-item">Report</li>
+          </ul>
+            <a href="#" class="btn btn-gradient mt-2"><div class="getPlan">Choose Plan</div></a>
+        </div>
+      </div>
+    </div> 
+    <div class="col-sm-3">
+        <div class="pricing-calculator pricing">
+            <h4> Calculate your Price</h4>
+      </div>  
+    </div>
+    </div>
+     
+</div>
+</html>
+
+
