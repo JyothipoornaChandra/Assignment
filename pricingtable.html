@@ -36,7 +36,7 @@ body {
   position: relative;
   will-change: transform;
   margin-top: 14%;
-    font-family: Fondamento, cursive;
+  font-family: Fondamento, cursive;
   border-radius:4px;
 }
 .card:after {
@@ -75,23 +75,26 @@ body {
   padding-top: 18px;
   font-size: 1em;
 }
-.card .list-group
+.card .list-group, .pricing-calculator .list-group
 {
     padding-bottom: 2rem;
     border-bottom: 2px solid;
     border-bottom-color: deepskyblue;
 }
-.card .list-group-item {
+.card .list-group-item , .pricing-calculator .list-group-item
+        {
   border: 0px;
   padding: .25rem;
   color: #808080;
   font-weight: 300;
+  font-family: Fondamento, cursive;
 }
 
 .display-2 {
   font-size: 2rem;
   
 }
+
 .display-2 .currency {
   font-size: 1rem;
   position: relative;
@@ -149,10 +152,78 @@ body {
     display:block;
     font-size: 1.5em;
 }
-.getPlan
+.pricing-calculator
 {
-    
+    margin-top:14%;
 }
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.tab-label {
+  display: flex;
+    justify-content: center;
+    padding: 1em;
+    background: linear-gradient(to right, blue, skyblue);
+    font-weight: bold;
+    font-family: Fondamento, cursive;
+    cursor: pointer;
+  /* Icon */
+}
+
+.tab-label::after {
+  content: "";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all .35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  transition: all .35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #1a252f;
+}
+
+input:checked + .tab-label {
+  background: linear-gradient(to right, blue, skyblue);
+}
+input:checked + .tab-label::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+
     </Style>
     </head>
 <div class="container">
@@ -240,13 +311,21 @@ body {
       </div>
     </div> 
     <div class="col-sm-3">
-        <div class="pricing-calculator pricing">
-            <h4> Calculate your Price</h4>
-      </div>  
-    </div>
-    </div>
-     
+        <div class="pricing-calculator">
+            <div class="tabs">
+                <div class="tab">
+                    <input type="checkbox" id="chck1">
+                        <label class="tab-label" for="chck1">Calculate your Price</label>
+                        <div class="tab-content">
+                            <ul class="list-group">
+                                <li class="list-group-item">Gold +</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>          
+      </div>
+    </div>     
 </div>
 </html>
-
-
