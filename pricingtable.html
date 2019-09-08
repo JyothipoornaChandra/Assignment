@@ -91,15 +91,15 @@ body {
 }
 
 .display-2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   
 }
 
 .display-2 .currency {
-  font-size: .65rem;
+  font-size: 1rem;
   position: relative;
   font-weight: 400;
-  top: -8px;
+  top: -9px;
   letter-spacing: 0px;
 }
 .display-2 .period {
@@ -222,15 +222,138 @@ input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
 }
+.priceconainer
+        {
+            margin-left: 5%;
+        }
+.popup {
+  display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+}
+.popup-overlay {
+	background: rgba(0,0,0,0.9);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.popup-content {
+	position: absolute;
+  background: #fff;
+	width: 800px;
+	margin: -58px 0 0 -264px;
+	left: 40%;
+	top: 14%;
+	z-index: 11;
+  padding: 20px;
+}
+.close-popup {
+  display: inline-block;
+  position: absolute;
+  top: -8px;
+  right: -30px;
+  font-size: 42px;
+}
+/* Animations */
+
+
+.scaleIn {
+  animation: scaleIn 0.5s ease-in both;
+  -webkit-animation: scaleIn 0.5s ease-in both;
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.5); }
+}
+@-webkit-keyframes scaleIn {
+  from { opacity: 0; -webkit-transform: scale(0.5); }
+}
+
+.scaleOut {
+  animation: scaleOut 0.5s ease-out both;
+  -webkit-animation: scaleOut 0.5s ease-out both;
+}
+@keyframes scaleOut {
+  to { opacity: 0; transform: scale(0.5); }
+}
+@-webkit-keyframes scaleOut {
+  to { opacity: 0; -webkit-transform: scale(0.5); }
+}
+
+.scaleUpIn {
+  animation: scaleIn 0.5s ease-in both;
+  -webkit-animation: scaleIn 0.5s ease-in both;
+}
+.scaleUpOut {
+  animation: scaleUpOut 0.5s ease-in both;
+  -webkit-animation: scaleUpOut 0.5s ease-in both;
+}
+@keyframes scaleUpOut {
+  to { opacity: 0; transform: scale(1.2); }
+}
+@-webkit-keyframes scaleUpOut {
+  to { opacity: 0; -webkit-transform: scale(1.2); }
+}
+.Generateprice
+{
+    display: inline;
+    float: left;
+    margin: 2% 15%;
+    padding: 8px;
+    background: linear-gradient(to right, blue, skyblue);
+    font-size: 1em;
+    color: #fff;
+    border-radius: 8px;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+.Total
+{
+    float: right;
+    background: linear-gradient(to right, blue, skyblue);
+    border-radius: 4px;
+    color: #ffff;
+    font-size: 1.6em;
+    box-sizing: border-box;
+    width: 100px;
+    max-width: 100px;
+}
+        .quotecalc
+        {
+            
+        }
+.quotecalc input
+{
+    position:inherit;
+    opacity: 1;
+    
+}
+.plan-selection
+{
+    display: inline;
+    float: right;
+    margin-right: -25%;
+}
+.quotecalc td
+        {
+           padding: 4px; 
+        }
 
 
     </Style>
     </head>
 <div class="container">
+    <div class="priceconainer">
   <div class="row flex-items-xs-middle flex-items-xs-center" style="min-height:0vh !important;height:80vh">
 
     <!-- Table #1  -->
-    <div class="col-sm-3">
+    <div class="col-sm-4">
       <div class="card text-xs-center">
         <div class="text-header">
             <div class="cardicon">
@@ -239,7 +362,7 @@ input:checked ~ .tab-content {
             </div>
         </div>
         <div class="card-header">
-          <h3 class="display-2"><span class="currency">$</span>600<span class="period">/month</span></h3>
+          <h3 class="display-2"><span class="currency">$</span>19<span class="period">/month</span></h3>
         </div>
         <div class="card-block">
 
@@ -255,7 +378,7 @@ input:checked ~ .tab-content {
         </div>
       </div>
     </div>
-       <div class="col-sm-3">
+       <div class="col-sm-4">
       <div class="card text-xs-center">
         <div class="text-header">
             <div class="cardicon">
@@ -264,7 +387,7 @@ input:checked ~ .tab-content {
             </div>
         </div>
         <div class="card-header">
-          <h3 class="display-2"><span class="currency">$</span>1800<span class="period">/month</span></h3>
+          <h3 class="display-2"><span class="currency">$</span>19<span class="period">/month</span></h3>
         </div>
         <div class="card-block">
 
@@ -283,7 +406,7 @@ input:checked ~ .tab-content {
         </div>
       </div>
     </div>
-       <div class="col-sm-3">
+       <div class="col-sm-4">
       <div class="card text-xs-center">
         <div class="text-header">
             <div class="cardicon">
@@ -292,7 +415,7 @@ input:checked ~ .tab-content {
             </div>
         </div>
         <div class="card-header">
-          <h3 class="display-2"><span class="currency">$</span>4000<span class="period">/month</span></h3>
+          <h3 class="display-2"><span class="currency">$</span>19<span class="period">/month</span></h3>
         </div>
         <div class="card-block">
 
@@ -311,21 +434,274 @@ input:checked ~ .tab-content {
       </div>
     </div> 
     <div class="col-sm-3">
-        <div class="pricing-calculator">
-            <div class="tabs">
-                <div class="tab">
-                    <input type="checkbox" id="chck1">
-                        <label class="tab-label" for="chck1">Calculate your Price</label>
-                        <div class="tab-content">
-                            <ul class="list-group">
-                                <li class="list-group-item">Gold +</li>
-                                
-                            </ul>
-                        </div>
-                </div>
-            </div>
-        </div>          
+                  
       </div>
-    </div>     
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="pricing-calculator">
+            <a href="#" class="btn open-popup" data-id="popup_3" data-animation="scaleUp">Calculate your Price</a>
+        </div>
+        </div>
+    </div>
+        <div id="popup_3" class="popup">
+  <div class="popup-overlay"></div>
+  <div class="popup-content">
+    <a href="#" class="close-popup" data-id="popup_3" data-animation="scaleUp">&times;</a>
+    <h4 style="font-family: Fondamento, serif;">Quotation Calculator</h4>
+      <form action="">
+    <table width=100% class="quotecalc">
+        <thead>
+            <tr>
+                <td></td>
+                <td> Quantity</td>
+                <td> Rate </td>
+                <td> Pretax Amount</td>
+            </tr>
+        </thead>  
+        <tbody> 
+            <tr>
+                <td> No of Users</td>
+                <td id="no_of_user">
+                    <input type="text" name="users" value="1" id="users"/> 
+                </td>
+                <td id="userrate">
+                    <input type="text" name="usersrate" value="400" id="usersrate" Readonly/>  
+                </td>
+                <td> 
+                     <input type="text" name="totalusers"  id="totalusers" Readonly/>
+                </td>
+            </tr>
+            <tr>
+                <td> Activation Fees </td>
+                <td id="activationfees">
+                    <input type="text" name="activationfee" value="1" id="activationfee"/> 
+                </td>
+                <td id="activationrates">
+                    <input type="text" name="activationrate" value="15000" id="activationrate" Readonly/>  
+                </td>
+                <td> 
+                     <input type="text" name="activationtotal"  id="activationtotal" Readonly/>
+                </td>
+            </tr>
+            <tr>
+                <td> Tablets/ Display Screen </td>
+            </tr>
+            <tr>
+                <td>
+                    IPAD
+                </td>
+                <td> 
+                    <input type="text" name="ipad_qty" value="1" id="ipad_qty"/>
+                </td>
+                <td> 
+                    <input type="text" name="ipad_cost" value="22500" id="ipad_cost" Readonly/>
+                </td>
+                <td> 
+                    <input type="text" name="ipad_total"  id="ipad_total" Readonly/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Samsung
+                </td>
+                <td> 
+                    <input type="text" name="samsung_qty" value="1" id="samsung_qty"/>
+                </td>
+                <td > 
+                    <input type="text" name="samsung_cost" value="12000" id="samsung_cost" Readonly/>
+                </td>
+                <td> 
+                    <input type="text" name="samsung_total"  id="samsung_total" Readonly/>
+                </td>
+            </tr>
+            <tr>
+                <td> Reception Stand</td>
+            </tr>
+             <tr>
+                <td> Table Stand</td>
+                <td> 
+                    <input type="text" name="table_qty" value="1" id="table_qty"/> 
+                </td>
+                <td > 
+                    <input type="text" name="table_rate" value="6500" id="table_rate" Readonly/>  
+                </td>
+                <td>
+                    <input type="text" name="table_total"  id="table_total" Readonly/>  
+                </td>
+            </tr>
+            <tr>
+                <td> Floor Stand</td>
+                <td > 
+                    <input type="text" name="floorstand_qty" value="1" id="floorstand_qty"/> 
+                </td>
+                <td> 
+                    <input type="text" name="floorstand_rate" value="6000" id="floorstand_rate" Readonly/>  
+                </td>
+                <td>
+                    <input type="text" name="floorstand_total"  id="floorstand_total" Readonly/>  
+                </td>
+            </tr>
+            <tr>
+                <td> Bluetooth Printers & Consumables</td>
+                <td > 
+                    <input type="text" name="bluetoth_qty" value="1" id="bluetoth_qty"/> 
+                </td>
+                <td>
+                    <input type="text" name="bluetoth_rate" value="4500" id="bluetoth_rate" Readonly/> 
+                </td>
+                <td> 
+                    <input type="text" name="bluetoth_total"  id="bluetoth_total" Readonly/> 
+                </td>
+            </tr>
+            <tr>
+                <td> <p style="display: inline;float: left">Select your Plan</p><select id="paln_price" class="plan-selection">
+                        <option value="100"> Silver </option>
+                        <option value="1000"> Gold</option>
+                        <option value="10000"> Platinum</option>
+                    </select>
+                    
+                
+                </td>
+                
+            </tr>
+           
+        </tbody>
+    </table>
+          <button type="button" class="Generateprice open-popup" id="Generateprice" data-id="popup_3" data-animation="scaleUp">  Generate Price</button>
+          <div class="Generateprice Total" id="QuotePrice"> </div>
+     </form> 
+  </div>
 </div>
+
+    </div></div>
+     <script>
+        $(document).ready(function(){
+            initTotalValue();
+            calGrandTotal();
+            function initTotalValue(){
+                $('#totalusers').val($('#usersrate').val());
+                $('#activationtotal').val($('#activationrate').val());
+                $('#ipad_total').val($('#ipad_cost').val());
+                $('#samsung_total').val($('#samsung_cost').val());
+                $('#table_total').val($('#table_rate').val());
+                 $('#floorstand_total').val($('#floorstand_rate').val());
+                 $('#bluetoth_total').val($('#bluetoth_rate').val());
+                
+            }        
+          
+	 $('#users').keyup(function () {
+         getUsers = $(this).val();
+         totalusers = Number(getUsers);
+         totaluserscost = totalusers * $('#usersrate').val();
+         console.log(totaluserscost);
+         $('#totalusers').val(totaluserscost);
+     })
+            $('#activationfee').keyup(function () {
+         getactivatefee = $(this).val();
+         activationcost = Number(getactivatefee);
+         activationquote =  activationcost * $('#activationrate').val();
+         console.log(activationquote);
+         $('#activationtotal').val(activationquote);
+     })
+       $('#ipad_qty').keyup(function () {
+         ipadcost = $(this).val();
+         ipdadN = Number(ipadcost);
+         ipadtotal =  ipdadN * $('#ipad_cost').val();
+         console.log(ipadtotal);
+         $('#ipad_total').val(ipadtotal);
+     })
+    $('#samsung_qty').keyup(function () {
+         getactivatefee = $(this).val();
+         activationcost = Number(getactivatefee);
+         activationquote =  activationcost * $('#samsung_cost').val();
+         console.log(activationquote);
+         $('#samsung_total').val(activationquote);
+     })
+      $('#table_qty').keyup(function () {
+         getactivatefee = $(this).val();
+         activationcost = Number(getactivatefee);
+         activationquote =  activationcost * $('#table_rate').val();
+         console.log(activationquote);
+         $('#table_total').val(activationquote);
+     })
+     $('#floorstand_qty').keyup(function () {
+         getactivatefee = $(this).val();
+         activationcost = Number(getactivatefee);
+         activationquote =  activationcost * $('#floorstand_rate').val();
+         console.log(activationquote);
+         $('#floorstand_total').val(activationquote);
+     })
+    $('#bluetoth_qty').keyup(function () {
+         getactivatefee = $(this).val();
+         activationcost = Number(getactivatefee);
+         activationquote =  activationcost * $('#bluetoth_rate').val();
+         console.log(activationquote);
+         $('#bluetoth_total').val(activationquote);
+     })
+     $('#Generateprice').click(function (){
+        calGrandTotal();
+     })
+    function calGrandTotal(){
+            $('#QuotePrice').html(  Number($('#totalusers').val())+
+               Number( $('#activationtotal').val())+
+               Number( $('#ipad_total').val() )+
+                Number($('#samsung_total').val())+
+                Number($('#table_total').val())+
+                Number( $('#floorstand_total').val())+
+                Number( $('#bluetoth_total').val())+
+                Number($('#paln_price').val()));
+            }  
+    })    
+    </script>
+    
+    <script>
+    // jQuery extend functions for popup
+(function($) {
+  $.fn.openPopup = function( settings ) {
+    var elem = $(this);
+    // Establish our default settings
+    var settings = $.extend({
+      anim: 'fade'
+    }, settings);
+    elem.show();
+    elem.find('.popup-content').addClass(settings.anim+'In');
+  }
+  
+  $.fn.closePopup = function( settings ) {
+    var elem = $(this);
+    // Establish our default settings
+    var settings = $.extend({
+      anim: 'fade'
+    }, settings);
+    elem.find('.popup-content').removeClass(settings.anim+'In').addClass(settings.anim+'Out');
+    
+    setTimeout(function(){
+        elem.hide();
+        elem.find('.popup-content').removeClass(settings.anim+'Out')
+      }, 500);
+  }
+    
+}(jQuery));
+
+// Click functions for popup
+$('.open-popup').click(function(){
+  $('#'+$(this).data('id')).openPopup({
+    anim: (!$(this).attr('data-animation') || $(this).data('animation') == null) ? 'fade' : $(this).data('animation')
+  });
+});
+$('.close-popup').click(function(){
+  $('#'+$(this).data('id')).closePopup({
+    anim: (!$(this).attr('data-animation') || $(this).data('animation') == null) ? 'fade' : $(this).data('animation')
+  });
+});
+
+// To open/close the popup at any functions call the below
+// $('#popup_default').openPopup();
+// $('#popup_default').closePopup();
+    
+    </script>
+  
 </html>
+
+
