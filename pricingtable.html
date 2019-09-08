@@ -114,11 +114,13 @@ body {
   text-transform: uppercase;
   font-size: .65rem;
   font-weight: 500;
-  color: #a6a6a6;
+  color: #fff;
   border-radius: 4px;
   padding: .45rem 1.25rem;
   letter-spacing: 1px;
+  background: linear-gradient(to right,blue,skyblue);
   margin-top: 10% !important;
+    padding: .5rem;
   
 }
 
@@ -155,6 +157,8 @@ body {
 .pricing-calculator
 {
     margin-top:14%;
+    color: #fff;
+   
 }
 input {
   position: absolute;
@@ -362,7 +366,7 @@ input:checked ~ .tab-content {
             </div>
         </div>
         <div class="card-header">
-          <h3 class="display-2"><span class="currency">$</span>19<span class="period">/month</span></h3>
+          <h3 class="display-2"><span class="currency">$</span>600<span class="period">/month</span></h3>
         </div>
         <div class="card-block">
 
@@ -387,7 +391,7 @@ input:checked ~ .tab-content {
             </div>
         </div>
         <div class="card-header">
-          <h3 class="display-2"><span class="currency">$</span>19<span class="period">/month</span></h3>
+          <h3 class="display-2"><span class="currency">$</span>1500<span class="period">/month</span></h3>
         </div>
         <div class="card-block">
 
@@ -415,7 +419,7 @@ input:checked ~ .tab-content {
             </div>
         </div>
         <div class="card-header">
-          <h3 class="display-2"><span class="currency">$</span>19<span class="period">/month</span></h3>
+          <h3 class="display-2"><span class="currency">$</span>3500<span class="period">/month</span></h3>
         </div>
         <div class="card-block">
 
@@ -437,6 +441,7 @@ input:checked ~ .tab-content {
                   
       </div>
     </div>
+        <div class="pricecalc">
     <div class="row">
         <div class="col-sm-3">
             <div class="pricing-calculator">
@@ -444,11 +449,12 @@ input:checked ~ .tab-content {
         </div>
         </div>
     </div>
+        </div>
         <div id="popup_3" class="popup">
   <div class="popup-overlay"></div>
   <div class="popup-content">
     <a href="#" class="close-popup" data-id="popup_3" data-animation="scaleUp">&times;</a>
-    <h4 style="font-family: Fondamento, serif;">Quotation Calculator</h4>
+    <h4 style="font-family: Fondamento, serif;padding-bottom: 2rem">Quotation Calculator</h4>
       <form action="">
     <table width=100% class="quotecalc">
         <thead>
@@ -556,9 +562,9 @@ input:checked ~ .tab-content {
             </tr>
             <tr>
                 <td> <p style="display: inline;float: left">Select your Plan</p><select id="paln_price" class="plan-selection">
-                        <option value="100"> Silver </option>
-                        <option value="1000"> Gold</option>
-                        <option value="10000"> Platinum</option>
+                        <option value="600"> Silver </option>
+                        <option value="1500"> Gold</option>
+                        <option value="3500"> Platinum</option>
                     </select>
                     
                 
